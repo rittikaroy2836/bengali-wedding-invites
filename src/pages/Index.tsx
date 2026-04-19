@@ -1,16 +1,23 @@
+import { useState } from "react";
 import mandala from "@/assets/mandala.png";
 import bridePhoto from "@/assets/bride-placeholder.jpg";
 import groomPhoto from "@/assets/groom-placeholder.jpg";
 import bgTexture from "@/assets/bg-texture.jpg";
 import { CountdownTimer } from "@/components/CountdownTimer";
 import { RsvpForm } from "@/components/RsvpForm";
+import { EnvelopeIntro } from "@/components/EnvelopeIntro";
+import { MusicToggle } from "@/components/MusicToggle";
 
 const Index = () => {
+  const [opened, setOpened] = useState(false);
   return (
-    <main
-      className="min-h-screen w-full relative overflow-hidden"
-      style={{ backgroundImage: `url(${bgTexture})`, backgroundSize: "cover", backgroundAttachment: "fixed" }}
-    >
+    <>
+      <EnvelopeIntro onOpen={() => setOpened(true)} />
+      <MusicToggle shouldPlay={opened} />
+      <main
+        className="min-h-screen w-full relative overflow-hidden"
+        style={{ backgroundImage: `url(${bgTexture})`, backgroundSize: "cover", backgroundAttachment: "fixed" }}
+      >
       {/* Floating petals */}
       <div className="pointer-events-none fixed inset-0 z-0 overflow-hidden">
         {Array.from({ length: 12 }).map((_, i) => (
@@ -194,7 +201,8 @@ const Index = () => {
           <p className="font-bengali text-base text-secondary mt-4">🐚 শুভমস্তু 🐚</p>
         </footer>
       </div>
-    </main>
+      </main>
+    </>
   );
 };
 
