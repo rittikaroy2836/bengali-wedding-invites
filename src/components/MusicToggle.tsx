@@ -2,12 +2,11 @@ import { useEffect, useRef, useState } from "react";
 import { Volume2, VolumeX } from "lucide-react";
 
 interface MusicToggleProps {
-  /** When true, attempts to start playing (fired by user gesture from envelope tap). */
   shouldPlay: boolean;
 }
 
-// Soft Indian sitar/shehnai instrumental — royalty-free, hosted on a public CDN
-const TRACK_URL = "https://cdn.pixabay.com/audio/2022/10/30/audio_347111d654.mp3";
+const TRACK_URL = "/Kone Daykha Alo ( কন দখ আল )  Rupak Tiary  Qpid India  Canon India  Best Wedding Song 2025.mp3";
+const START_TIME = 13; // 0:13 seconds
 
 export const MusicToggle = ({ shouldPlay }: MusicToggleProps) => {
   const audioRef = useRef<HTMLAudioElement | null>(null);
@@ -16,8 +15,16 @@ export const MusicToggle = ({ shouldPlay }: MusicToggleProps) => {
   useEffect(() => {
     const audio = new Audio(TRACK_URL);
     audio.loop = true;
-    audio.volume = 0.35;
+    audio.volume = 0.4;
     audio.preload = "auto";
+    audio.currentTime = START_TIME;
+
+    audio.addEventListener("timeupdate", () => {
+      if (audio.currentTime < START_TIME) {
+        audio.currentTime = START_TIME;
+      }
+    });
+
     audioRef.current = audio;
     return () => {
       audio.pause();
@@ -27,9 +34,8 @@ export const MusicToggle = ({ shouldPlay }: MusicToggleProps) => {
 
   useEffect(() => {
     if (!shouldPlay || !audioRef.current) return;
-    audioRef.current.play().catch(() => {
-      // Autoplay blocked — user can tap the toggle to start.
-    });
+    audioRef.current.currentTime = START_TIME;
+    audioRef.current.play().catch(() => {});
   }, [shouldPlay]);
 
   const toggle = () => {
