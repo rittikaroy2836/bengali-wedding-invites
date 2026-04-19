@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Great+Vibes&family=Cinzel:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Great+Vibes&family=Cinzel:wght@400;500;600&family=Hind+Siliguri:wght@400;500;600;700&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -85,6 +85,10 @@
   }
   .font-serif-elegant {
     font-family: 'Cormorant Garamond', serif;
+  }
+  .font-bengali {
+    font-family: 'Hind Siliguri', 'Noto Sans Bengali', sans-serif;
+    font-weight: 500;
   }
 
   .text-gold {

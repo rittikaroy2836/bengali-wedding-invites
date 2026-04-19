@@ -35,8 +35,8 @@ const Index = () => {
             <img src={mandala} alt="" width={1024} height={1024} className="w-[120%] max-w-none animate-spin-slow" />
           </div>
 
-          <p className="font-display text-xs tracking-[0.4em] text-primary animate-fade-up">শুভ বিবাহ</p>
-          <p className="font-display text-[10px] tracking-[0.3em] text-muted-foreground mt-1 animate-fade-up">WEDDING INVITATION</p>
+          <p className="font-bengali text-2xl text-primary animate-fade-up">🐚 শুভ বিবাহ 🐚</p>
+          <p className="font-display text-[10px] tracking-[0.3em] text-secondary mt-1 animate-fade-up">SHUBHO BIBAHO • WEDDING INVITATION</p>
 
           <div className="my-6 flex items-center justify-center gap-3 animate-fade-up">
             <span className="h-px w-12 bg-gradient-to-r from-transparent to-secondary" />
@@ -44,15 +44,20 @@ const Index = () => {
             <span className="h-px w-12 bg-gradient-to-l from-transparent to-secondary" />
           </div>
 
-          <h1 className="font-script text-6xl sm:text-7xl text-gradient-gold leading-tight animate-scale-in" style={{ animationDelay: "0.2s", opacity: 0 }}>
+          <p className="font-bengali text-3xl text-primary animate-scale-in" style={{ animationDelay: "0.2s", opacity: 0 }}>রিয়া</p>
+          <h1 className="font-script text-6xl sm:text-7xl text-gradient-gold leading-tight animate-scale-in -mt-1" style={{ animationDelay: "0.3s", opacity: 0 }}>
             Ria
           </h1>
-          <p className="font-display text-2xl text-primary my-2 animate-fade-up" style={{ animationDelay: "0.5s", opacity: 0 }}>&</p>
-          <h1 className="font-script text-6xl sm:text-7xl text-gradient-gold leading-tight animate-scale-in" style={{ animationDelay: "0.7s", opacity: 0 }}>
+          <p className="font-display text-2xl text-primary my-3 animate-fade-up" style={{ animationDelay: "0.5s", opacity: 0 }}>~ ❀ ~</p>
+          <p className="font-bengali text-3xl text-primary animate-scale-in" style={{ animationDelay: "0.6s", opacity: 0 }}>শুভজিৎ</p>
+          <h1 className="font-script text-6xl sm:text-7xl text-gradient-gold leading-tight animate-scale-in -mt-1" style={{ animationDelay: "0.7s", opacity: 0 }}>
             Subhojit
           </h1>
 
-          <p className="font-serif-elegant italic text-base text-muted-foreground mt-6 px-4 animate-fade-up" style={{ animationDelay: "1s", opacity: 0 }}>
+          <p className="font-bengali text-base text-primary mt-6 px-4 animate-fade-up" style={{ animationDelay: "1s", opacity: 0 }}>
+            "দুটি হৃদয়, একটি পথ — চিরকালের বন্ধন"
+          </p>
+          <p className="font-serif-elegant italic text-sm text-muted-foreground mt-2 px-4 animate-fade-up" style={{ animationDelay: "1.1s", opacity: 0 }}>
             Two souls, one journey — together forever.
           </p>
         </section>
@@ -74,7 +79,8 @@ const Index = () => {
                   />
                 </div>
                 <div className="text-center mt-3">
-                  <p className="font-display text-[10px] tracking-widest text-secondary">THE BRIDE</p>
+                  <p className="font-display text-[10px] tracking-widest text-secondary">THE BRIDE • কনে</p>
+                  <p className="font-bengali text-xl text-primary leading-tight mt-1">রিয়া</p>
                   <h2 className="font-script text-3xl text-primary leading-tight">Ria</h2>
                   <p className="font-serif-elegant text-xs text-muted-foreground">Roy Chowdhury</p>
                 </div>
@@ -94,7 +100,8 @@ const Index = () => {
                   />
                 </div>
                 <div className="text-center mt-3">
-                  <p className="font-display text-[10px] tracking-widest text-secondary">THE GROOM</p>
+                  <p className="font-display text-[10px] tracking-widest text-secondary">THE GROOM • বর</p>
+                  <p className="font-bengali text-xl text-primary leading-tight mt-1">শুভজিৎ</p>
                   <h2 className="font-script text-3xl text-primary leading-tight">Subhojit</h2>
                   <p className="font-serif-elegant text-xs text-muted-foreground">Singh</p>
                 </div>
@@ -105,11 +112,12 @@ const Index = () => {
 
         {/* DATE */}
         <section className="py-10 text-center">
-          <div className="flex items-center justify-center gap-3 mb-5">
+          <div className="flex items-center justify-center gap-3 mb-2">
             <span className="h-px w-10 bg-secondary/60" />
             <p className="font-display text-[10px] tracking-[0.3em] text-secondary">SAVE THE DATE</p>
             <span className="h-px w-10 bg-secondary/60" />
           </div>
+          <p className="font-bengali text-sm text-primary mb-3">শুভ তারিখ • ১৯শে অগ্রহায়ণ, ১৪৩৩</p>
 
           <div className="inline-flex items-center justify-center gap-5 my-3">
             <div className="text-right">
@@ -125,6 +133,8 @@ const Index = () => {
             </div>
           </div>
 
+          <p className="font-bengali text-base text-primary mt-2">সন্ধ্যা ৭টা থেকে</p>
+
           <div className="mt-8">
             <CountdownTimer />
           </div>
@@ -133,12 +143,14 @@ const Index = () => {
         {/* VENUE */}
         <section className="py-8">
           <div className="bg-card/80 backdrop-blur-sm border border-secondary/40 rounded-2xl p-6 shadow-soft text-center">
-            <div className="text-3xl mb-2">📍</div>
-            <p className="font-display text-[10px] tracking-[0.3em] text-secondary">THE VENUE</p>
+            <div className="text-3xl mb-2">🪔</div>
+            <p className="font-display text-[10px] tracking-[0.3em] text-secondary">THE VENUE • স্থান</p>
             <h3 className="font-script text-3xl text-primary mt-2">Janakalyan Club</h3>
+            <p className="font-bengali text-lg text-primary mt-1">জনকল্যাণ ক্লাব</p>
             <p className="font-serif-elegant text-base text-foreground mt-2 leading-relaxed">
               Baguiati,<br />Kolkata — 700059
             </p>
+            <p className="font-bengali text-sm text-muted-foreground">বাগুইআটি, কলকাতা</p>
             <a
               href="https://maps.google.com/?q=Janakalyan+Club+Baguiati+Kolkata+700059"
               target="_blank"
@@ -159,7 +171,8 @@ const Index = () => {
               <span className="h-px w-10 bg-secondary/60" />
             </div>
             <h2 className="font-script text-5xl text-gradient-gold">RSVP</h2>
-            <p className="font-serif-elegant italic text-sm text-muted-foreground mt-2 px-4">
+            <p className="font-bengali text-lg text-primary mt-1">আপনার উপস্থিতি কাম্য</p>
+            <p className="font-serif-elegant italic text-sm text-muted-foreground mt-1 px-4">
               Your presence will make our day complete
             </p>
           </div>
@@ -175,9 +188,10 @@ const Index = () => {
             <span className="text-gold text-xl">✦</span>
             <span className="h-px w-12 bg-secondary/60" />
           </div>
-          <p className="font-script text-2xl text-primary">With love & blessings</p>
+          <p className="font-bengali text-2xl text-primary">আশীর্বাদ ও ভালোবাসা সহ</p>
+          <p className="font-script text-2xl text-primary mt-1">With love & blessings</p>
           <p className="font-serif-elegant text-sm text-muted-foreground mt-2">Ria & Subhojit</p>
-          <p className="font-display text-[10px] tracking-widest text-secondary mt-4">শুভেচ্ছা সহ</p>
+          <p className="font-bengali text-base text-secondary mt-4">🐚 শুভমস্তু 🐚</p>
         </footer>
       </div>
     </main>
