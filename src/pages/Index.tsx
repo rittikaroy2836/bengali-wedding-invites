@@ -188,9 +188,10 @@ const Index = () => {
             <span className="text-gold text-xl">✦</span>
             <span className="h-px w-12 bg-secondary/60" />
           </div>
-          <p className="font-script text-2xl text-primary">With love & blessings</p>
+          <p className="font-bengali text-2xl text-primary">আশীর্বাদ ও ভালোবাসা সহ</p>
+          <p className="font-script text-2xl text-primary mt-1">With love & blessings</p>
           <p className="font-serif-elegant text-sm text-muted-foreground mt-2">Ria & Subhojit</p>
-          <p className="font-display text-[10px] tracking-widest text-secondary mt-4">শুভেচ্ছা সহ</p>
+          <p className="font-bengali text-base text-secondary mt-4">🐚 শুভমস্তু 🐚</p>
         </footer>
       </div>
     </main>
