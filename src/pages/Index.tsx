@@ -112,11 +112,12 @@ const Index = () => {
 
         {/* DATE */}
         <section className="py-10 text-center">
-          <div className="flex items-center justify-center gap-3 mb-5">
+          <div className="flex items-center justify-center gap-3 mb-2">
             <span className="h-px w-10 bg-secondary/60" />
             <p className="font-display text-[10px] tracking-[0.3em] text-secondary">SAVE THE DATE</p>
             <span className="h-px w-10 bg-secondary/60" />
           </div>
+          <p className="font-bengali text-sm text-primary mb-3">শুভ তারিখ • ১৯শে অগ্রহায়ণ, ১৪৩৩</p>
 
           <div className="inline-flex items-center justify-center gap-5 my-3">
             <div className="text-right">
@@ -131,6 +132,8 @@ const Index = () => {
               <p className="font-script text-4xl text-primary leading-none mt-1">7:00 PM</p>
             </div>
           </div>
+
+          <p className="font-bengali text-base text-primary mt-2">সন্ধ্যা ৭টা থেকে</p>
 
           <div className="mt-8">
             <CountdownTimer />
