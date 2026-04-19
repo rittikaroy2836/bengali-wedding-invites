@@ -201,7 +201,8 @@ const Index = () => {
           <p className="font-bengali text-base text-secondary mt-4">🐚 শুভমস্তু 🐚</p>
         </footer>
       </div>
-    </main>
+      </main>
+    </>
   );
 };
 
