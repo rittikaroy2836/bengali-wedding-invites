@@ -35,8 +35,8 @@ const Index = () => {
             <img src={mandala} alt="" width={1024} height={1024} className="w-[120%] max-w-none animate-spin-slow" />
           </div>
 
-          <p className="font-display text-xs tracking-[0.4em] text-primary animate-fade-up">শুভ বিবাহ</p>
-          <p className="font-display text-[10px] tracking-[0.3em] text-muted-foreground mt-1 animate-fade-up">WEDDING INVITATION</p>
+          <p className="font-bengali text-2xl text-primary animate-fade-up">🐚 শুভ বিবাহ 🐚</p>
+          <p className="font-display text-[10px] tracking-[0.3em] text-secondary mt-1 animate-fade-up">SHUBHO BIBAHO • WEDDING INVITATION</p>
 
           <div className="my-6 flex items-center justify-center gap-3 animate-fade-up">
             <span className="h-px w-12 bg-gradient-to-r from-transparent to-secondary" />
@@ -44,15 +44,20 @@ const Index = () => {
             <span className="h-px w-12 bg-gradient-to-l from-transparent to-secondary" />
           </div>
 
-          <h1 className="font-script text-6xl sm:text-7xl text-gradient-gold leading-tight animate-scale-in" style={{ animationDelay: "0.2s", opacity: 0 }}>
+          <p className="font-bengali text-3xl text-primary animate-scale-in" style={{ animationDelay: "0.2s", opacity: 0 }}>রিয়া</p>
+          <h1 className="font-script text-6xl sm:text-7xl text-gradient-gold leading-tight animate-scale-in -mt-1" style={{ animationDelay: "0.3s", opacity: 0 }}>
             Ria
           </h1>
-          <p className="font-display text-2xl text-primary my-2 animate-fade-up" style={{ animationDelay: "0.5s", opacity: 0 }}>&</p>
-          <h1 className="font-script text-6xl sm:text-7xl text-gradient-gold leading-tight animate-scale-in" style={{ animationDelay: "0.7s", opacity: 0 }}>
+          <p className="font-display text-2xl text-primary my-3 animate-fade-up" style={{ animationDelay: "0.5s", opacity: 0 }}>~ ❀ ~</p>
+          <p className="font-bengali text-3xl text-primary animate-scale-in" style={{ animationDelay: "0.6s", opacity: 0 }}>শুভজিৎ</p>
+          <h1 className="font-script text-6xl sm:text-7xl text-gradient-gold leading-tight animate-scale-in -mt-1" style={{ animationDelay: "0.7s", opacity: 0 }}>
             Subhojit
           </h1>
 
-          <p className="font-serif-elegant italic text-base text-muted-foreground mt-6 px-4 animate-fade-up" style={{ animationDelay: "1s", opacity: 0 }}>
+          <p className="font-bengali text-base text-primary mt-6 px-4 animate-fade-up" style={{ animationDelay: "1s", opacity: 0 }}>
+            "দুটি হৃদয়, একটি পথ — চিরকালের বন্ধন"
+          </p>
+          <p className="font-serif-elegant italic text-sm text-muted-foreground mt-2 px-4 animate-fade-up" style={{ animationDelay: "1.1s", opacity: 0 }}>
             Two souls, one journey — together forever.
           </p>
         </section>
