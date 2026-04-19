@@ -100,7 +100,8 @@ const Index = () => {
                   />
                 </div>
                 <div className="text-center mt-3">
-                  <p className="font-display text-[10px] tracking-widest text-secondary">THE GROOM</p>
+                  <p className="font-display text-[10px] tracking-widest text-secondary">THE GROOM • বর</p>
+                  <p className="font-bengali text-xl text-primary leading-tight mt-1">শুভজিৎ</p>
                   <h2 className="font-script text-3xl text-primary leading-tight">Subhojit</h2>
                   <p className="font-serif-elegant text-xs text-muted-foreground">Singh</p>
                 </div>
