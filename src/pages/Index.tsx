@@ -171,7 +171,8 @@ const Index = () => {
               <span className="h-px w-10 bg-secondary/60" />
             </div>
             <h2 className="font-script text-5xl text-gradient-gold">RSVP</h2>
-            <p className="font-serif-elegant italic text-sm text-muted-foreground mt-2 px-4">
+            <p className="font-bengali text-lg text-primary mt-1">আপনার উপস্থিতি কাম্য</p>
+            <p className="font-serif-elegant italic text-sm text-muted-foreground mt-1 px-4">
               Your presence will make our day complete
             </p>
           </div>
