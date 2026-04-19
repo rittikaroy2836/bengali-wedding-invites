@@ -79,7 +79,8 @@ const Index = () => {
                   />
                 </div>
                 <div className="text-center mt-3">
-                  <p className="font-display text-[10px] tracking-widest text-secondary">THE BRIDE</p>
+                  <p className="font-display text-[10px] tracking-widest text-secondary">THE BRIDE • কনে</p>
+                  <p className="font-bengali text-xl text-primary leading-tight mt-1">রিয়া</p>
                   <h2 className="font-script text-3xl text-primary leading-tight">Ria</h2>
                   <p className="font-serif-elegant text-xs text-muted-foreground">Roy Chowdhury</p>
                 </div>
