@@ -1,11 +1,15 @@
+import { useState } from "react";
 import mandala from "@/assets/mandala.png";
 import bridePhoto from "@/assets/bride-placeholder.jpg";
 import groomPhoto from "@/assets/groom-placeholder.jpg";
 import bgTexture from "@/assets/bg-texture.jpg";
 import { CountdownTimer } from "@/components/CountdownTimer";
 import { RsvpForm } from "@/components/RsvpForm";
+import { EnvelopeIntro } from "@/components/EnvelopeIntro";
+import { MusicToggle } from "@/components/MusicToggle";
 
 const Index = () => {
+  const [opened, setOpened] = useState(false);
   return (
     <main
       className="min-h-screen w-full relative overflow-hidden"
