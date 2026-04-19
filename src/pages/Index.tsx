@@ -143,12 +143,14 @@ const Index = () => {
         {/* VENUE */}
         <section className="py-8">
           <div className="bg-card/80 backdrop-blur-sm border border-secondary/40 rounded-2xl p-6 shadow-soft text-center">
-            <div className="text-3xl mb-2">📍</div>
-            <p className="font-display text-[10px] tracking-[0.3em] text-secondary">THE VENUE</p>
+            <div className="text-3xl mb-2">🪔</div>
+            <p className="font-display text-[10px] tracking-[0.3em] text-secondary">THE VENUE • স্থান</p>
             <h3 className="font-script text-3xl text-primary mt-2">Janakalyan Club</h3>
+            <p className="font-bengali text-lg text-primary mt-1">জনকল্যাণ ক্লাব</p>
             <p className="font-serif-elegant text-base text-foreground mt-2 leading-relaxed">
               Baguiati,<br />Kolkata — 700059
             </p>
+            <p className="font-bengali text-sm text-muted-foreground">বাগুইআটি, কলকাতা</p>
             <a
               href="https://maps.google.com/?q=Janakalyan+Club+Baguiati+Kolkata+700059"
               target="_blank"
