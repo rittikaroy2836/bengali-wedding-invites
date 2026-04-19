@@ -11,10 +11,13 @@ import { MusicToggle } from "@/components/MusicToggle";
 const Index = () => {
   const [opened, setOpened] = useState(false);
   return (
-    <main
-      className="min-h-screen w-full relative overflow-hidden"
-      style={{ backgroundImage: `url(${bgTexture})`, backgroundSize: "cover", backgroundAttachment: "fixed" }}
-    >
+    <>
+      <EnvelopeIntro onOpen={() => setOpened(true)} />
+      <MusicToggle shouldPlay={opened} />
+      <main
+        className="min-h-screen w-full relative overflow-hidden"
+        style={{ backgroundImage: `url(${bgTexture})`, backgroundSize: "cover", backgroundAttachment: "fixed" }}
+      >
       {/* Floating petals */}
       <div className="pointer-events-none fixed inset-0 z-0 overflow-hidden">
         {Array.from({ length: 12 }).map((_, i) => (
